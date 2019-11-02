@@ -10,7 +10,7 @@ class EmailAddressParser
   end
 
   def parse
-    email_addresses.split(/[', ']/).uniq.reject! {|email| email.empty?}
+    @email_addresses.split(/[", "]/).reject {|s| s.empty?}.uniq
   end
 
 
