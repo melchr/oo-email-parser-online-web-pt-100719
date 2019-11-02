@@ -13,5 +13,4 @@ class EmailAddressParser
     @email_addresses.split(/[", "]/).reject {|s| s.empty?}.uniq
   end
 
-
 end
